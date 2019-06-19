@@ -19,7 +19,7 @@
     "typescript": "^3.3.3"
   },
   "devDependencies": {
-    "@google/clasp": "^1.6.0",
+    "@google/clasp": "^1.7.0",
     "@types/google-apps-script": "^0.0.28",
     "ava": "^1.2.1",
     "clean-webpack-plugin": "^0.1.19",
