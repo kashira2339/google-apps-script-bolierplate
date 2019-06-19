@@ -1,0 +1,51 @@
+{
+  "name": "boilerplate-ts",
+  "version": "1.0.0",
+  "description": "Description",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "webpack -p --mode=production",
+    "login": "npx clasp login",
+    "upload": "npx clasp push",
+    "deploy": "npm test && npm run build && npm run upload",
+    "test": "ava"
+  },
+  "keywords": [
+    "google-apps-script",
+    "gsuite",
+    "apps-script"
+  ],
+  "dependencies": {
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "@google/clasp": "^1.6.0",
+    "@types/google-apps-script": "^0.0.28",
+    "ava": "^1.2.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "dayjs": "^1.7.7",
+    "eslint": "^5.6.1",
+    "gas-lib": "^2.0.2",
+    "gas-webpack-plugin": "^0.3.0",
+    "prettier": "^1.14.3",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
